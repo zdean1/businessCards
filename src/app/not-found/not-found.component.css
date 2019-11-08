@@ -1,7 +1,14 @@
 p {
-    color: red;
     font-size: 48px;
     align-items: center;
     justify-content: center;
+    display: flex;
+}
+
+h1 {
+    color: red;
+    font-size: 80px;
+    justify-content: center;
+    align-items: center;
     display: flex;
 }
