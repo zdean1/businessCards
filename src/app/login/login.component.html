@@ -1,0 +1,20 @@
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <h3> BusinessCards </h3>
+      </div>
+    </div>
+  </nav>
+
+<div class="wrapper">
+  <div id="formContent">
+    <!-- Login Form -->
+    <form>
+      <input type="username" name="email" placeholder="email" #inputEmail />
+      <input type="password" name="psswd" placeholder="password" (keydown.enter)="login(inputEmail, inputPassword)" #inputPassword />
+      <input type="button" (click)="login(inputEmail, inputPassword)" *ngIf="!authService.isLoggedIn" value="Log In" />
+
+    </form> 
+    <p align="center" *ngIf="errorMsg"> Email and/or password is incorrect. Try again.</p>
+  </div>
+</div>
