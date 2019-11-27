@@ -17,6 +17,11 @@ User can log out via the 'Logout' button at the top right of the page.
 
 Known bugs: 'Update Card' is not a true update. I had trouble getting the existing cards information from firestore and updating that information.
 
+Could not get hosting to work. Followed Firebase Hosting procedure but website only displays the initial welcome screen.
+https://businesscardsapp-ec118.firebaseapp.com/
+
+
+_______________________________________________________________________________________________________________________________
 
 
 # BusinessCards

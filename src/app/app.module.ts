@@ -41,7 +41,7 @@ import { UpdateComponent } from './update/update.component';
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
-    AngularFireModule.initializeApp(environment.firebase, 'businessCards'),
+    AngularFireModule.initializeApp(environment.firebase, 'businessCardsApp'),
     AngularFirestoreModule, // imports firebase/firestore, only needed for database features
     AngularFireAuthModule, // imports firebase/auth, only needed for auth features
     AngularFireDatabaseModule,
