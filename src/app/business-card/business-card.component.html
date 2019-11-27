@@ -1,1 +1,17 @@
-<p>business-card works!</p>
+
+<div class="businessCard">
+    <table border="3" bordercolor="black" width=400><td>
+
+<h3 style="margin-left:10px"> {{ card.name }}</h3>
+<p style="margin-left:10px"> {{ card.email }}</p>
+<p style="margin-left:10px"> {{ card.position }}</p>
+<p style="margin-left:10px"> {{ card.company }}</p>
+<p style="margin-left:10px"> {{ card.phone }} </p>
+<span>
+    <button (click)="removeCard(card)"> Remove Card </button>
+    <button (click)="updateCard(card)"> Update Card </button> 
+</span>
+
+</td></table>
+</div>
+

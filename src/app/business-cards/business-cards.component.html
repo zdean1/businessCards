@@ -1,1 +1,6 @@
-<p>business-cards works!</p>
+<app-navigation></app-navigation>
+
+
+        <div *ngFor="let card of cards | async">
+            <app-business-card [card]="card"></app-business-card>
+        </div>

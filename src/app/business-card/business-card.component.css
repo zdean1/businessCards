@@ -1,0 +1,13 @@
+.businessCard {
+    background-color: lightgray;
+    margin: 20px;
+    width: 400px;
+    border-color: black;
+    border: "3";
+    box-shadow: 10px 10px 5px grey;
+}
+
+.card {
+    margin-left: "50px";
+    align-content: center;
+}

@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from "@angular/common/http";
 import { WebcamModule } from 'ngx-webcam';
 
@@ -18,6 +18,10 @@ import { environment } from '../environments/environment';
 import { AuthService } from './auth/auth.service';
 import { AuthGuard } from './auth/auth.guard';
 import { BusinessCardComponent } from './business-card/business-card.component';
+import { WebcamComponent } from './webcam/webcam.component';
+import { NewbusinesscardComponent } from './newbusinesscard/newbusinesscard.component';
+import { NavigationComponent } from './navigation/navigation.component';
+import { UpdateComponent } from './update/update.component';
 
 @NgModule({
   declarations: [
@@ -26,17 +30,23 @@ import { BusinessCardComponent } from './business-card/business-card.component';
     BusinessCardsComponent,
     NotFoundComponent,
     BusinessCardComponent,
-    WebcamModule
+    WebcamComponent,
+    NewbusinesscardComponent,
+    NavigationComponent,
+    UpdateComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    ReactiveFormsModule,
     HttpClientModule,
     AngularFireModule.initializeApp(environment.firebase, 'businessCards'),
     AngularFirestoreModule, // imports firebase/firestore, only needed for database features
     AngularFireAuthModule, // imports firebase/auth, only needed for auth features
-    AngularFireDatabaseModule
+    AngularFireDatabaseModule,
+    WebcamModule,
+    HttpClientModule
   ],
   providers: [AuthService, AuthGuard],
   bootstrap: [AppComponent]
