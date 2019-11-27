@@ -1,0 +1,48 @@
+<app-navigation> Update </app-navigation>
+<button (click)="onWebcamClick()" disabled>Use Webcam</button>
+
+<div align="center" *ngIf="showCam">
+    <app-webcam></app-webcam>
+</div>
+
+<br/>
+
+<form [formGroup]="form">
+    <table align="center" border="5" bordercolor="black" width=450><td>
+
+    <br/>
+
+        <div align="center">
+            <div>
+                <label for="name" style="margin-right:2.5em"> Name: </label>
+                <input type="text" id="name" placeholder="Name" formControlName="name"/>
+            </div>
+
+            <div>
+                <label for="email" style="margin-right:2.5em"> Email: </label>
+                <input type="text" id="email" placeholder="Email" formControlName="email"/>
+            </div>
+            
+            <div>
+                <label for="position" style="margin-right:1.5em"> Position: </label>
+                <input type="text" id="position" placeholder="Position" formControlName="position"/>
+            </div>
+
+            <div>
+                <label for="company" style="margin-right:1em"> Company: </label>
+                <input type="text" id="company" placeholder="Company" formControlName="company"/>
+            </div>
+
+            <div>
+                <label for="phone" style="margin-right:2.3em"> Phone: </label>
+                <input type="text" id="phone" placeholder="(###) ###-####" formControlName="phone"/>
+            </div>
+
+            <input type="button" (click)="updateCard()" value="Update"/>
+
+        </div>
+    </td></table>
+</form>
+
+<br/>
+<br/>
