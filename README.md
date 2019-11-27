@@ -1,3 +1,24 @@
+https://github.com/zdean1/businessCards
+
+login: chandlergegg@gmail.com
+password: 5DeepBreaths!
+
+Once logged in, user will get redirectd to the main page where business cards are displayed. 
+To add a new business card, click on the 'Add New Card' button in the navigation header.
+    On the newCard page, can add new cards via the form.
+    *'Use Webcam' button is disabled and not implemented*
+Once the user clicks 'Add Card', will be redirected back to the home page and the new card will be displayed.
+To remove a card, click 'Remove Card' button on the desired card to be removed.
+To update a card, click on the 'Update Card' button.
+    On clicking the button, the user will be redirecte to an update page, where a form can be filled out. 
+Once the user clicks, 'Update', they will be redirected back to the homepage and the card will be updated*
+    *This update action will delete the original card to be updated and create a new card in that cards place*
+User can log out via the 'Logout' button at the top right of the page.
+
+Known bugs: 'Update Card' is not a true update. I had trouble getting the existing cards information from firestore and updating that information.
+
+
+
 # BusinessCards
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.2.
